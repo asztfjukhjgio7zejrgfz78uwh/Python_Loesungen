@@ -1,0 +1,11 @@
+geld = int(input('Bitte eingeworfenes Geld angeben:'))
+
+def wechselgeldautomat (geld):
+
+    rest = int(geld % 20)
+
+    zwanziger = int((geld - rest) /20)
+
+    print(zwanziger, 'x 20 Euro Scheine ', rest, 'x 1 Euro Münzen')
+
+wechselgeldautomat(geld)
